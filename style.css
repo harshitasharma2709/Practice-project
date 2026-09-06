@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #111827;
+    padding: 25px 18px;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.logo b {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 14px 10px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.logo strong {
+    display: block;
+    color: white;
+    font-size: 19px;
+}
+
+.logo small {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+
+/* Navigation */
+
+nav a {
+    display: block;
+    padding: 13px 15px;
+    margin: 8px 0;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #1e293b;
+    color: white;
+    transform: translateX(4px);
+}
+
+nav .active {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Admin */
+
+.admin {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.admin:hover {
+    color: white;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    margin-left: 250px;
+    padding: 35px 45px;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #111827;
+}
+
+header p {
+    margin-top: 8px;
+    color: #64748b;
+}
+
+
+/* ================= DASHBOARD CARDS ================= */
+
+.cards {
+    display: flex;
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.card {
+    position: relative;
+    background: white;
+    padding: 24px;
+    flex: 1;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+.card p {
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    margin: 5px 0;
+    color: #2563eb;
+    font-size: 32px;
+}
+
+.card span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+
+/* ================= BOX ================= */
+
+.box {
+    background: white;
+    padding: 28px;
+    margin: 25px 0;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+
+/* Section Title */
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title a:hover {
+    color: #7c3aed;
+}
+
+
+/* ================= TABLE ================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #f8fafc;
+    color: #475569;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+td {
+    color: #475569;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ================= STATUS ================= */
+
+.status {
+    display: inline-block;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.transit {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.delivered {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.pending {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+
+/* ================= BUTTONS ================= */
+
+button {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ================= FORMS ================= */
+
+form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+input,
+select,
+textarea {
+    padding: 13px 14px;
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+    background: #f8fafc;
+    color: #334155;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+input,
+select {
+    flex: 1;
+    min-width: 180px;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    resize: vertical;
+}
+
+
+/* ================= TRACKING ================= */
+
+.tracking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.step {
+    text-align: center;
+    min-width: 100px;
+}
+
+.step b {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: #e2e8f0;
+    color: #64748b;
+    border-radius: 50%;
+}
+
+.active-step b {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+.step p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.line {
+    height: 3px;
+    background: #e2e8f0;
+    flex: 1;
+    margin: 0 10px;
+}
+
+
+/* ================= LIST ================= */
+
+.box ul {
+    padding-left: 25px;
+}
+
+.box li {
+    margin: 14px 0;
+    color: #475569;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px;
+        padding: 10px 12px;
+    }
+
+    .admin {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        width: 100%;
+    }
+
+    .tracking {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .line {
+        width: 3px;
+        height: 25px;
+        flex: none;
+    }
+}

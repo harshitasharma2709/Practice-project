@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking - Logistics Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside>
+
+        <div class="logo">
+            <b>L&D</b>
+
+            <div>
+                <strong>Logistics</strong>
+                <small>Delivery System</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="shipments.html">▣ Shipments</a>
+            <a href="customers.html">♟ Customers</a>
+            <a href="packages.html">▤ Packages</a>
+            <a href="delivery.html">⌖ Delivery</a>
+            <a href="tracking.html" class="active">◉ Tracking</a>
+            <a href="about.html">ⓘ About Us</a>
+            <a href="contact.html">▰ Contact Us</a>
+        </nav>
+
+        <a href="#" class="admin">⚙ Admin Panel</a>
+
+    </aside>
+
+
+    <main>
+
+        <header>
+
+            <div>
+                <h1>Tracking</h1>
+                <p>Track shipment and delivery status</p>
+            </div>
+
+        </header>
+
+
+        <section class="box">
+
+            <h2>Track Your Shipment</h2>
+
+            <form>
+
+                <input type="text" placeholder="Enter Shipment ID">
+
+                <button type="submit">Track Shipment</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="box">
+
+            <div class="title">
+                <h2>Shipment Status</h2>
+                <span class="status transit">In Transit</span>
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>Shipment ID</th>
+                    <th>Pickup</th>
+                    <th>Destination</th>
+                    <th>Current Location</th>
+                    <th>Expected Date</th>
+                </tr>
+
+                <tr>
+                    <td>SH001</td>
+                    <td>Delhi</td>
+                    <td>Mumbai</td>
+                    <td>Ahmedabad</td>
+                    <td>08 Sep 2026</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="box">
+
+            <h2>Delivery Progress</h2>
+
+            <div class="tracking">
+
+                <div class="step active-step">
+                    <b>1</b>
+                    <p>Order Placed</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step active-step">
+                    <b>2</b>
+                    <p>Picked Up</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step active-step">
+                    <b>3</b>
+                    <p>In Transit</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step">
+                    <b>4</b>
+                    <p>Out for Delivery</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step">
+                    <b>5</b>
+                    <p>Delivered</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Logistics & Delivery Management System</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

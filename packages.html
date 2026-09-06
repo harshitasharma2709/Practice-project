@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - Logistics Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside>
+
+        <div class="logo">
+            <b>L&D</b>
+
+            <div>
+                <strong>Logistics</strong>
+                <small>Delivery System</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="shipments.html">▣ Shipments</a>
+            <a href="customers.html">♟ Customers</a>
+            <a href="packages.html" class="active">▤ Packages</a>
+            <a href="delivery.html">⌖ Delivery</a>
+            <a href="tracking.html">◉ Tracking</a>
+            <a href="about.html">ⓘ About Us</a>
+            <a href="contact.html">▰ Contact Us</a>
+        </nav>
+
+        <a href="#" class="admin">⚙ Admin Panel</a>
+
+    </aside>
+
+
+    <main>
+
+        <header>
+
+            <div>
+                <h1>Packages</h1>
+                <p>View and manage package information</p>
+            </div>
+
+        </header>
+
+
+        <section class="box">
+
+            <div class="title">
+                <h2>Package List</h2>
+                <button>Add Package</button>
+            </div>
+
+
+            <table>
+
+                <tr>
+                    <th>Package ID</th>
+                    <th>Shipment ID</th>
+                    <th>Package Type</th>
+                    <th>Weight</th>
+                    <th>Destination</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>PK001</td>
+                    <td>SH001</td>
+                    <td>Box</td>
+                    <td>5 kg</td>
+                    <td>Mumbai</td>
+                    <td>
+                        <span class="status transit">In Transit</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PK002</td>
+                    <td>SH002</td>
+                    <td>Document</td>
+                    <td>1 kg</td>
+                    <td>Delhi</td>
+                    <td>
+                        <span class="status delivered">Delivered</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PK003</td>
+                    <td>SH003</td>
+                    <td>Parcel</td>
+                    <td>8 kg</td>
+                    <td>Pune</td>
+                    <td>
+                        <span class="status pending">Pending</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PK004</td>
+                    <td>SH004</td>
+                    <td>Box</td>
+                    <td>12 kg</td>
+                    <td>Bangalore</td>
+                    <td>
+                        <span class="status transit">In Transit</span>
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="box">
+
+            <h2>Package Search</h2>
+
+            <form>
+
+                <input type="text" placeholder="Package ID">
+
+                <input type="text" placeholder="Shipment ID">
+
+                <select>
+                    <option>Package Type</option>
+                    <option>Box</option>
+                    <option>Document</option>
+                    <option>Parcel</option>
+                </select>
+
+                <button type="submit">Search Package</button>
+
+            </form>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Logistics & Delivery Management System</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

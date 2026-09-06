@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery - Logistics Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside>
+
+        <div class="logo">
+            <b>L&D</b>
+
+            <div>
+                <strong>Logistics</strong>
+                <small>Delivery System</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="shipments.html">▣ Shipments</a>
+            <a href="customers.html">♟ Customers</a>
+            <a href="packages.html">▤ Packages</a>
+            <a href="delivery.html" class="active">⌖ Delivery</a>
+            <a href="tracking.html">◉ Tracking</a>
+            <a href="about.html">ⓘ About Us</a>
+            <a href="contact.html">▰ Contact Us</a>
+        </nav>
+
+        <a href="#" class="admin">⚙ Admin Panel</a>
+
+    </aside>
+
+
+    <main>
+
+        <header>
+
+            <div>
+                <h1>Delivery</h1>
+                <p>Manage pickup and delivery information</p>
+            </div>
+
+        </header>
+
+
+        <section class="box">
+
+            <div class="title">
+                <h2>Delivery Schedule</h2>
+                <button>Add Delivery</button>
+            </div>
+
+
+            <table>
+
+                <tr>
+                    <th>Delivery ID</th>
+                    <th>Shipment ID</th>
+                    <th>Pickup</th>
+                    <th>Destination</th>
+                    <th>Driver</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>D001</td>
+                    <td>SH001</td>
+                    <td>Delhi</td>
+                    <td>Mumbai</td>
+                    <td>Ravi Kumar</td>
+                    <td>06 Sep 2026</td>
+                    <td>
+                        <span class="status transit">In Transit</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>D002</td>
+                    <td>SH002</td>
+                    <td>Jaipur</td>
+                    <td>Delhi</td>
+                    <td>Arjun Singh</td>
+                    <td>05 Sep 2026</td>
+                    <td>
+                        <span class="status delivered">Delivered</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>D003</td>
+                    <td>SH003</td>
+                    <td>Agra</td>
+                    <td>Pune</td>
+                    <td>Vikas Sharma</td>
+                    <td>07 Sep 2026</td>
+                    <td>
+                        <span class="status pending">Pending</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>D004</td>
+                    <td>SH004</td>
+                    <td>Mumbai</td>
+                    <td>Bangalore</td>
+                    <td>Rahul Verma</td>
+                    <td>06 Sep 2026</td>
+                    <td>
+                        <span class="status transit">In Transit</span>
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="box">
+
+            <h2>Delivery Information</h2>
+
+            <form>
+
+                <input type="text" placeholder="Delivery ID">
+
+                <input type="text" placeholder="Shipment ID">
+
+                <input type="text" placeholder="Driver Name">
+
+                <select>
+                    <option>Delivery Status</option>
+                    <option>Pending</option>
+                    <option>In Transit</option>
+                    <option>Out for Delivery</option>
+                    <option>Delivered</option>
+                </select>
+
+                <button type="submit">Search Delivery</button>
+
+            </form>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Logistics & Delivery Management System</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

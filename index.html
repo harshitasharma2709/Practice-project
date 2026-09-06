@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics & Delivery Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside>
+        <div class="logo">
+            <b>L&D</b>
+            <div>
+                <strong>Logistics</strong>
+                <small>Delivery System</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">⌂ Dashboard</a>
+            <a href="shipment.html">▣ Shipments</a>
+            <a href="customers.html">♟ Customers</a>
+            <a href="packages.html">▤ Packages</a>
+            <a href="delivery.html">⌖ Delivery</a>
+            <a href="tracking.html">◉ Tracking</a>
+            <a href="about.html">ⓘ About Us</a>
+            <a href="contact.html">▰ Contact Us</a>
+        </nav>
+
+        <a href="#" class="admin">⚙ Admin Panel</a>
+    </aside>
+
+
+    <main>
+
+        <header>
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome to your logistics management system</p>
+            </div>
+
+            <div class="user">
+                <span>🔔</span>
+                <b>Admin</b>
+            </div>
+        </header>
+
+
+        <section class="cards">
+
+            <div class="card">
+                <p>Total Shipments</p>
+                <h2>125</h2>
+                <span>All shipments</span>
+            </div>
+
+            <div class="card">
+                <p>In Transit</p>
+                <h2>48</h2>
+                <span>Currently moving</span>
+            </div>
+
+            <div class="card">
+                <p>Delivered</p>
+                <h2>62</h2>
+                <span>Successfully delivered</span>
+            </div>
+
+            <div class="card">
+                <p>Pending</p>
+                <h2>15</h2>
+                <span>Awaiting delivery</span>
+            </div>
+
+        </section>
+
+
+        <section class="box">
+
+            <div class="title">
+                <h2>Recent Shipments</h2>
+                <a href="shipments.html">See All →</a>
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>Shipment ID</th>
+                    <th>Pickup</th>
+                    <th>Delivery</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+
+                <tr>
+                    <td>SH001</td>
+                    <td>Delhi</td>
+                    <td>Mumbai</td>
+                    <td><span class="status transit">In Transit</span></td>
+                    <td><a href="shipments.html">View</a></td>
+                </tr>
+
+                <tr>
+                    <td>SH002</td>
+                    <td>Jaipur</td>
+                    <td>Delhi</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                    <td><a href="shipments.html">View</a></td>
+                </tr>
+
+                <tr>
+                    <td>SH003</td>
+                    <td>Agra</td>
+                    <td>Pune</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td><a href="shipments.html">View</a></td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="box">
+
+            <div class="title">
+                <h2>Shipment Tracking</h2>
+                <a href="tracking.html">Track →</a>
+            </div>
+
+            <div class="tracking">
+                <div class="step active-step">
+                    <b>1</b>
+                    <p>Order Placed</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step active-step">
+                    <b>2</b>
+                    <p>Picked Up</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step active-step">
+                    <b>3</b>
+                    <p>In Transit</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step">
+                    <b>4</b>
+                    <p>Out for Delivery</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="step">
+                    <b>5</b>
+                    <p>Delivered</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Logistics & Delivery Management System</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

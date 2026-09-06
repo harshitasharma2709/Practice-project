@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipments - Logistics Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<aside>
+    <div class="logo">
+        <b>L&D</b>
+        <div>
+            <strong>Logistics</strong>
+            <small>Delivery System</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">⌂ Dashboard</a>
+        <a href="shipments.html" class="active">▣ Shipments</a>
+        <a href="customers.html">♟ Customers</a>
+        <a href="packages.html">▤ Packages</a>
+        <a href="delivery.html">⌖ Delivery</a>
+        <a href="tracking.html">◉ Tracking</a>
+        <a href="about.html">ⓘ About Us</a>
+        <a href="contact.html">▰ Contact Us</a>
+    </nav>
+
+    <a href="#" class="admin">⚙ Admin Panel</a>
+</aside>
+
+<main>
+
+<header>
+    <div>
+        <h1>Shipments</h1>
+        <p>View and manage shipment information</p>
+    </div>
+</header>
+
+<section class="box">
+
+    <div class="title">
+        <h2>All Shipments</h2>
+        <button>Add Shipment</button>
+    </div>
+
+    <table>
+        <tr>
+            <th>Shipment ID</th>
+            <th>Customer</th>
+            <th>Pickup</th>
+            <th>Delivery</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>SH001</td>
+            <td>Rahul Sharma</td>
+            <td>Delhi</td>
+            <td>Mumbai</td>
+            <td>05 Sep 2026</td>
+            <td><span class="status transit">In Transit</span></td>
+        </tr>
+
+        <tr>
+            <td>SH002</td>
+            <td>Priya Singh</td>
+            <td>Jaipur</td>
+            <td>Delhi</td>
+            <td>04 Sep 2026</td>
+            <td><span class="status delivered">Delivered</span></td>
+        </tr>
+
+        <tr>
+            <td>SH003</td>
+            <td>Aman Verma</td>
+            <td>Agra</td>
+            <td>Pune</td>
+            <td>03 Sep 2026</td>
+            <td><span class="status pending">Pending</span></td>
+        </tr>
+
+        <tr>
+            <td>SH004</td>
+            <td>Neha Gupta</td>
+            <td>Mumbai</td>
+            <td>Bangalore</td>
+            <td>02 Sep 2026</td>
+            <td><span class="status transit">In Transit</span></td>
+        </tr>
+    </table>
+
+</section>
+
+<section class="box">
+
+    <h2>Shipment Details</h2>
+
+    <form>
+        <input type="text" placeholder="Shipment ID">
+        <input type="text" placeholder="Customer Name">
+
+        <select>
+            <option>Shipment Status</option>
+            <option>Pending</option>
+            <option>In Transit</option>
+            <option>Delivered</option>
+        </select>
+
+        <button type="submit">Search Shipment</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Logistics & Delivery Management System</p>
+</footer>
+
+</main>
+
+</body>
+</html>
