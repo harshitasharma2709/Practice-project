@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Logistics System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside>
+
+        <div class="logo">
+            <b>L&D</b>
+
+            <div>
+                <strong>Logistics</strong>
+                <small>Delivery System</small>
+            </div>
+        </div>
+
+        <nav>
+
+            <a href="user-dashboard.html" class="active">
+                ⌂ My Dashboard
+            </a>
+
+            <a href="user-tracking.html">
+                ◉ Track Shipment
+            </a>
+
+            <a href="index.html">
+                ⚙ Admin Panel
+            </a>
+
+        </nav>
+
+        <a href="user-login.html" class="admin">
+            ↪ Logout
+        </a>
+
+    </aside>
+
+
+    <main>
+
+        <header>
+
+            <div>
+                <h1>My Dashboard</h1>
+                <p>Welcome back, Rahul Sharma</p>
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <div class="card">
+                <p>My Shipments</p>
+                <h2>5</h2>
+                <span>Total shipments</span>
+            </div>
+
+            <div class="card">
+                <p>In Transit</p>
+                <h2>1</h2>
+                <span>Currently moving</span>
+            </div>
+
+            <div class="card">
+                <p>Delivered</p>
+                <h2>4</h2>
+                <span>Successfully delivered</span>
+            </div>
+
+        </section>
+
+
+        <section class="box">
+
+            <div class="title">
+
+                <h2>My Recent Shipments</h2>
+
+                <a href="user-tracking.html">
+                    Track →
+                </a>
+
+            </div>
+
+
+            <table>
+
+                <tr>
+                    <th>Shipment ID</th>
+                    <th>Pickup</th>
+                    <th>Destination</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>SH001</td>
+                    <td>Delhi</td>
+                    <td>Mumbai</td>
+                    <td>05 Sep 2026</td>
+                    <td>
+                        <span class="status transit">
+                            In Transit
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SH002</td>
+                    <td>Jaipur</td>
+                    <td>Delhi</td>
+                    <td>04 Sep 2026</td>
+                    <td>
+                        <span class="status delivered">
+                            Delivered
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SH003</td>
+                    <td>Agra</td>
+                    <td>Pune</td>
+                    <td>03 Sep 2026</td>
+                    <td>
+                        <span class="status delivered">
+                            Delivered
+                        </span>
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="box">
+
+            <h2>Current Shipment</h2>
+
+            <p>
+                <b>Shipment ID:</b> SH001
+            </p>
+
+            <p>
+                <b>From:</b> Delhi
+            </p>
+
+            <p>
+                <b>To:</b> Mumbai
+            </p>
+
+            <p>
+                <b>Current Location:</b> Ahmedabad
+            </p>
+
+            <p>
+                <b>Expected Delivery:</b> 08 Sep 2026
+            </p>
+
+            <a href="user-tracking.html">
+                <button>Track Shipment</button>
+            </a>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Logistics & Delivery Management System</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
